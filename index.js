@@ -3,6 +3,7 @@ const app = express();
 const QRCode = require("qrcode");
 const BodyParser = require("body-parser");
 
+app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));   
 app.use(BodyParser.json())
 
